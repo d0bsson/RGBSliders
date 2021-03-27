@@ -77,21 +77,24 @@
                                     <constraint firstAttribute="height" constant="119" id="cwm-uk-GU8"/>
                                 </constraints>
                             </stackView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cNg-87-zN9">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cNg-87-zN9">
                                 <rect key="frame" x="169" y="329" width="241" height="31"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="WTR-nS-but"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="changeColor" destination="BYZ-38-t0r" eventType="valueChanged" id="Ziw-Ib-dqh"/>
+                                </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oPK-J1-tPo">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oPK-J1-tPo">
                                 <rect key="frame" x="169" y="373" width="241" height="31"/>
                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="kAj-Ry-Wn2"/>
                                 </constraints>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XpB-56-9cF">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XpB-56-9cF">
                                 <rect key="frame" x="169" y="418" width="241" height="31"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <constraints>
@@ -118,6 +121,15 @@
                             <constraint firstItem="6mM-ib-cPF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="unG-mW-vc3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="aD7-gG-tMi" id="Juy-GM-6PH"/>
+                        <outlet property="blueSlider" destination="oPK-J1-tPo" id="Gel-8x-D6D"/>
+                        <outlet property="greenLabel" destination="lew-XM-y3z" id="AAx-2K-0Xy"/>
+                        <outlet property="greenSlider" destination="XpB-56-9cF" id="XZ7-Zh-ZcD"/>
+                        <outlet property="mainView" destination="cVS-6z-d6A" id="nJj-sR-5zf"/>
+                        <outlet property="redLabel" destination="IwQ-TZ-8sq" id="ayn-EZ-iO8"/>
+                        <outlet property="redSlider" destination="cNg-87-zN9" id="dgq-HX-OjT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
