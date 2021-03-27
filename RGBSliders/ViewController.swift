@@ -11,7 +11,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var mainView: UIView!
     
-    
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     @IBOutlet weak var greenSlider: UISlider!
@@ -32,19 +31,10 @@ class ViewController: UIViewController {
             blue: CGFloat(blueSlider.value),
             alpha: 1
         )
-    }
-    
-    @IBAction func redSliderAction() {
+        
         redLabel.text = String(format: "%.2f", (redSlider.value))
-    }
-    
-    @IBAction func blueSliderAction() {
         blueLabel.text = String(format: "%.2f", (blueSlider.value))
-    }
-    
-    @IBAction func greenSliderAction() {
         greenLabel.text = String(format: "%.2f", (greenSlider.value))
     }
-    
 }
 

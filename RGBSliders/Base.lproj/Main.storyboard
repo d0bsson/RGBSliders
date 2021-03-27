@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,18 +13,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RGBSliders" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVS-6z-d6A">
-                                <rect key="frame" x="20" y="52" width="388" height="163"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <rect key="frame" x="20" y="8" width="374" height="163"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="163" id="7SN-Qg-Ykx"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="6mM-ib-cPF">
-                                <rect key="frame" x="19.999999999999993" y="329" width="101.33333333333331" height="119"/>
+                                <rect key="frame" x="19.999999999999993" y="285" width="101.33333333333331" height="119"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="338-Jl-Y0E">
                                         <rect key="frame" x="0.0" y="0.0" width="51" height="119"/>
@@ -78,27 +78,24 @@
                                 </constraints>
                             </stackView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cNg-87-zN9">
-                                <rect key="frame" x="169" y="329" width="241" height="31"/>
+                                <rect key="frame" x="169" y="285" width="227" height="31"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <connections>
                                     <action selector="changeColor" destination="BYZ-38-t0r" eventType="valueChanged" id="Ziw-Ib-dqh"/>
-                                    <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="hxN-mp-vcf"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oPK-J1-tPo">
-                                <rect key="frame" x="169" y="373" width="241" height="31"/>
+                                <rect key="frame" x="169" y="329" width="227" height="31"/>
                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                 <connections>
-                                    <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="WWV-bl-7zO"/>
                                     <action selector="changeColor" destination="BYZ-38-t0r" eventType="valueChanged" id="SfG-YY-fgT"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XpB-56-9cF">
-                                <rect key="frame" x="169" y="418" width="241" height="31"/>
+                                <rect key="frame" x="169" y="374" width="227" height="31"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <connections>
                                     <action selector="changeColor" destination="BYZ-38-t0r" eventType="valueChanged" id="ZMi-an-hZG"/>
-                                    <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="enS-FF-f9c"/>
                                 </connections>
                             </slider>
                         </subviews>
@@ -137,6 +134,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -145,9 +145,6 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
