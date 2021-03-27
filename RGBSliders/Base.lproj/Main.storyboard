@@ -82,12 +82,14 @@
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <connections>
                                     <action selector="changeColor" destination="BYZ-38-t0r" eventType="valueChanged" id="Ziw-Ib-dqh"/>
+                                    <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="hxN-mp-vcf"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oPK-J1-tPo">
                                 <rect key="frame" x="169" y="373" width="241" height="31"/>
                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                 <connections>
+                                    <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="WWV-bl-7zO"/>
                                     <action selector="changeColor" destination="BYZ-38-t0r" eventType="valueChanged" id="SfG-YY-fgT"/>
                                 </connections>
                             </slider>
@@ -96,6 +98,7 @@
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <connections>
                                     <action selector="changeColor" destination="BYZ-38-t0r" eventType="valueChanged" id="ZMi-an-hZG"/>
+                                    <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="enS-FF-f9c"/>
                                 </connections>
                             </slider>
                         </subviews>

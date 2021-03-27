@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mainView.layer.cornerRadius = 15
     }
 
     @IBAction func changeColor() {
@@ -31,10 +32,19 @@ class ViewController: UIViewController {
             blue: CGFloat(blueSlider.value),
             alpha: 1
         )
+    }
+    
+    @IBAction func redSliderAction() {
         redLabel.text = String(format: "%.2f", (redSlider.value))
     }
     
-   
+    @IBAction func blueSliderAction() {
+        blueLabel.text = String(format: "%.2f", (blueSlider.value))
+    }
+    
+    @IBAction func greenSliderAction() {
+        greenLabel.text = String(format: "%.2f", (greenSlider.value))
+    }
     
 }
 
